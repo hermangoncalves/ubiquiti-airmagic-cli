@@ -1,0 +1,18 @@
+app:
+  headless: true
+
+network:
+  timeout: 60000
+
+devices:
+  - name: "Switch Core"
+    ip: "192.168.1.10"
+    username: "admin"
+
+  - name: "Access Point Sala"
+    ip: "192.168.1.20"
+    username: "ubnt"
+
+  - name: "EdgeRouter"
+    ip: "192.168.1.1"
+    username: "admin"

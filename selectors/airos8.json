@@ -1,0 +1,26 @@
+{
+  "login": {
+    "username": "#username, input[name=\"username\"]",
+    "password": "#password, input[name=\"password\"]",
+    "submit": "button[type=submit], .login-button"
+  },
+  "nav": {
+    "airmagic_tab": "a[href*=airmagic], [data-nav=\"airmagic\"]",
+    "wireless_tab": "a[href*=wireless], [data-nav=\"wireless\"]"
+  },
+  "airmagic": {
+    "scan_button": "button#scan, button[data-action=\"scan\"], .btn-scan",
+    "progress_done": ".scan-complete, .result-ready",
+    "best_row": ".best-channel, tr.best",
+    "rows": "table tbody tr",
+    "col_channel": ".col-channel",
+    "col_frequency": ".col-frequency",
+    "col_improvement": ".col-improvement, .col-score"
+  },
+  "wireless": {
+    "channel_input": "input[name=\"channel\"], input[name=\"freq\"], select[name=\"channel\"]",
+    "apply_button": "button.apply, button#apply, button[type=submit]",
+    "confirm_modal_apply": "button.confirm, .modal .btn-primary",
+    "save_toast": ".toast-success, .alert-success"
+  }
+}
