@@ -44,12 +44,16 @@ else
 fi
 
 # Install dependencies
-cd "$INSTALL_DIR"
 echo "Installing dependencies..."
-npm ci --production
+npm install --production
+npm install --save-dev typescript
+
+# Build TypeScript
+echo "Building TypeScript..."
+npm run build
 
 # Create global alias
-ALIAS_CMD="alias airmagic='npx --yes $INSTALL_DIR'"
+ALIAS_CMD="alias airmagic='node $INSTALL_DIR/dist/index.js'"
 SHELL_RC=""
 
 if [[ "$SHELL" == */bash ]]; then

@@ -2,7 +2,10 @@
   "name": "ubiquiti-airmagic-cli",
   "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "bin": {
+    "airmagic": "dist/index.js"
+  },
   "scripts": {
     "dev": "tsx src/index.ts",
     "build": "tsc && tsc-alias",
