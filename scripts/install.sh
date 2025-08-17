@@ -33,6 +33,8 @@ if ! command -v chromium-browser &> /dev/null && ! command -v chromium &> /dev/n
     sudo apt install -y chromium-browser || sudo apt install -y chromium
 fi
 
+echo 'export PUPPETEER_EXECUTABLE_PATH=$(which chromium-browser || which chromium)' >> ~/.bashrc
+
 # Clone or update repository
 if [ -d "$INSTALL_DIR" ]; then
     echo "Project already exists, updating..."
